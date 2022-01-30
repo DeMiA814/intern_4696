@@ -250,18 +250,23 @@ img.top-image {
     }
 }
 
-.triangle1{
-    border-top: 15px solid white;
+.triangle {
     border-right: 30px solid transparent;
     border-left: 30px solid transparent;
     width: 1px;
     position: relative;
     top: 15px;
-    left: 47%;
-  }
+    left: calc(50% - 30px);
+    z-index: 1;
+}
+
+.triangle1{
+    border-top: 15px solid white;
+}
 
 .service-feature-color, .consultation-color, .company-introduction-color {
     background-color: #7bcdce;
+    margin-bottom: -15px;
 }
 
 .service-feature-title{
@@ -293,6 +298,7 @@ img.top-image {
     justify-content: center;
     gap: 40px;
     padding: 0 0 50px 0;
+    margin-bottom: -15px;
 }
 
 .service-feature {
@@ -345,12 +351,6 @@ img.top-image {
 
 .triangle2{
     border-top: 15px solid #7bcdce;
-    border-right: 30px solid transparent;
-    border-left: 30px solid transparent;
-    width: 1px;
-    position: relative;
-    top: -16px;
-    left: 47%;
 }
 
 .plan-title {
@@ -505,6 +505,7 @@ img.top-image {
     justify-content: center;
     gap: 10px;
     padding: 0 0 50px 0;
+    margin-bottom: 0;
 }
 
 .contrast {
@@ -534,16 +535,11 @@ li.contrast::marker{
 
 .triangle3{
     border-top: 15px solid #5396db;
-    border-right: 30px solid transparent;
-    border-left: 30px solid transparent;
-    width: 1px;
-    position: relative;
-    top: -16px;
-    left: 47%;
 }
 
 .contrast-color {
     background-color: #5396db;
+    margin-bottom: -15px;
 }
 
 .time-title{
@@ -622,16 +618,11 @@ thead {
 
 .triangle4{
     border-top: 15px solid #7bcdce;
-    border-right: 30px solid transparent;
-    border-left: 30px solid transparent;
-    width: 1px;
-    position: relative;
-    top: -16px;
-    left: 47%;
 }
 
 .flow-color {
     background-color: #7bcdce;
+    margin-bottom: -15px;
 }
 
 .flow-title{
@@ -666,6 +657,7 @@ thead {
     padding: 0 0 50px 0;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
 }
 
 .flow {
@@ -776,6 +768,7 @@ thead {
 
 .FAQ-color {
     background-color: #5396db;
+    margin-bottom: -15px;
 }
 
 .FAQ-title{
@@ -839,12 +832,6 @@ li.FAQ::marker{
 
 .triangle5{
     border-top: 15px solid #5396db;
-    border-right: 30px solid transparent;
-    border-left: 30px solid transparent;
-    width: 1px;
-    position: relative;
-    top: 0px;
-    left: 47%;
 }
 
 .consultation-title{
@@ -906,12 +893,6 @@ li.FAQ::marker{
 }
 .triangle6{
     border-top: 15px solid #7bcdce;
-    border-right: 30px solid transparent;
-    border-left: 30px solid transparent;
-    width: 1px;
-    position: relative;
-    top: 0px;
-    left: 47%;
 }
 
 .contact-title{
@@ -1084,4 +1065,5 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 2;
 }
