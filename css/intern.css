@@ -634,14 +634,16 @@ th {
 }
 
 .textarea1 {
-    margin-left: 35%;
+    margin: 0 25%;
     width: 50%;
     line-height: 3;
 }
 
 .p6 {
     font-size: 0.8rem;
+    width: 80%;
     color: gray;
+    margin: 10% auto 0;
 }
 
 .boxU2 {
