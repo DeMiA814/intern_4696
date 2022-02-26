@@ -657,7 +657,7 @@ th {
     background: #5396db;
     font-size: 1.4rem;
     font-weight: bold;
-    margin: auto;
+    margin: 0 auto 1rem;
     padding: 0.8%;
     width: 20%;
     color: #ffffff;
@@ -666,24 +666,24 @@ th {
 .boxV {
     background: #7bcdce;
     width: 100%;
-    margin-bottom: 2%;
+    margin-bottom: 3rem;
 }
 
 .p7 {
     color: #ffffff;
     font-weight: bold;
     font-size: 1rem;
-    margin-left: 10%;
     width: 90%;
-    
-    
+    margin: auto;
+    padding-top: 1rem;    
 }
 
 .p9 {
     color: #ffffff;
     font-weight: bold;
     font-size: 0.8rem;
-    margin-top: 2%;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
     text-align: center;
 }
 
@@ -692,8 +692,10 @@ th {
     bottom: 0;
     left: 0;
     width: 100%;
+    height: 3rem;
     background: #000000;
     font-size: 0.8rem;
+    z-index: 2;
 }
 
 
