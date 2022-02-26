@@ -357,12 +357,15 @@ span.header-contact {
  
 .table1 {
     width: 70%;
-    position: absolute;
     border: solid 4px #7bcdce;
     border-collapse: collapse;
     height: 50%;
     font-size: 1rem;
-    margin-left: 15%;
+    margin: auto;
+}
+
+.table1 tr {
+    height: 3rem;
 }
 
 .table-title {
@@ -374,9 +377,10 @@ th {
 }
 
 .p4{
-    margin-top: 27%;
     font-size: 80%;
     text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
 }
 
 .boxO {
