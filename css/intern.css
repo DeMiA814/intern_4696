@@ -213,7 +213,6 @@ span.header-contact {
     border: 2px solid #000000;
     box-shadow: 0 0 0 4px #3b72d6;
     width: 100%;
-    height: 30%;
     margin: 5%;
     background-color:#ffffff;
     
@@ -221,7 +220,7 @@ span.header-contact {
 
 .boxF img {
     width: 30%;
-    margin-left: 30%;
+    margin-left: 35%;
     margin-top: -10%;
 }
 
@@ -238,10 +237,11 @@ span.header-contact {
 
 .boxH {
     display: block;
-    width: 20%;
+    text-align: center;
+    width: 25%;
     height: 30%;
     border: 4px solid #5396db;
-    margin-right: 10%;
+    margin: 0 10%;
 }
 
 .plan1 {
@@ -270,10 +270,11 @@ span.header-contact {
 
 .boxI {
     display: block;
-    width: 20%;
+    text-align: center;
+    width: 25%;
     height: 30%;
-    border: 4px solid #7bcdce
-
+    border: 4px solid #7bcdce;
+    margin: 0 10%;
 }
 
 .plan2 {
