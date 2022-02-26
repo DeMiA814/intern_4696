@@ -566,14 +566,22 @@ th {
 
 .container9 {
     display: flex;
-    width: 90%;
-    height: 80%;
+    justify-content: center;
+}
+
+.container9-item {
+    margin: 0 1rem;
+    padding: 0.5rem;
+}
+
+.boxT-p {
+    margin-bottom: 0;
+    padding-bottom: 1rem;
 }
 
 .boxT1 {
     display: inline-block;
     background-color: #ffffff;
-    margin-left:10%;
     font-size: 0.9rem;
     font-weight: bold;
 }
@@ -581,7 +589,6 @@ th {
 .boxT2 {
     display: inline-block;
     background-color: #ffffff;
-    margin-left:2%;
     font-size: 0.9rem;
     font-weight: bold;
 }
@@ -589,8 +596,6 @@ th {
 .boxT3 {
     display: inline-block;
     background-color: #ffffff;
-    margin-right:5%;
-    margin-left: 2%;
     font-size: 0.9rem;
     font-weight: bold;
 }
