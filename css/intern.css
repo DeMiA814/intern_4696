@@ -32,7 +32,6 @@ span.header-contact {
     display: block;
     color: black;
     background-color: #e4fdff;
-    height: 30%;
     font-weight: bold;
 }
 
@@ -43,29 +42,35 @@ span.header-contact {
 }
 
 .container img {
-    width: 200%;
+    width: 80%;
+    margin: 1rem 0;
+    padding: 0 10%;
 }
 
-.img {
-    width: 10%;
-    margin-left: 5%;
-    margin-right: 10%;
-    
+.top-img {
+    width: 30vw;
+    position: relative;  
+    display: flex;
+    align-items: center; 
 }
 
 .boxC {
     display: flex;
+    justify-content: center;
     background-color: #3b72d6;
-    height: 90px;
 }
 
 .p1-4 {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(30vw - 1%);
+    text-align: center;
     background :#ffffff;
     font-weight: bold;
     font-size: 0.8rem;
-    margin: auto;
     color: #5396db;
+    margin: 1rem 1%;
 }
 
 
