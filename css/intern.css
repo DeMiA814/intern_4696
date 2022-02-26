@@ -110,6 +110,7 @@ span.header-contact {
 .h1-2 {
     text-align: center;
     padding-top: 3%;
+    margin: 0;
 }
 
 .container2 {
@@ -124,11 +125,16 @@ span.header-contact {
 
 }
 
-.boxD::after {
+.section-white {
+    position: relative;
+}
+
+.section-white::after {
     content: ' ';
     position: absolute;
-    margin-left: 45%;
-    margin-top: 1%;
+    left: 50%;
+    bottom: -1.4rem;
+    transform: translate(-50%, 0);
     width: 0;
     height: 0;
     border: none;
@@ -137,6 +143,19 @@ span.header-contact {
     border-left: 2.5rem solid transparent;
     }
 
+.section-color::after {
+    content: ' ';
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 0%;
+    transform: translate(-50%, 0);
+    width: 0;
+    height: 0;
+    border: none;
+    border-right: 2.5rem solid transparent;
+    border-left: 2.5rem solid transparent;
+    z-index: 1;
+}
 
 
 .grid-box {
@@ -180,18 +199,8 @@ span.header-contact {
 }
 
 .boxE::after {
-    content: ' ';
-    position: absolute;
-    margin-left: 45%;
-    margin-top: 0%;
-    width: 0;
-    height: 0;
-    border: none;
     border-top: 1.4rem solid #7bcdce;
-    border-right: 2.5rem solid transparent;
-    border-left: 2.5rem solid transparent;
-    }
-
+}
 
 .container3 {
     display: flex;
@@ -220,20 +229,6 @@ span.header-contact {
     display: block;
 }
 
-.boxG::after {
-    content: ' ';
-    position: absolute;
-    margin-left: 45%;
-    margin-top: 0.5%;
-    width: 0;
-    height: 0;
-    border: none;
-    border-top: 1.4rem solid #ffffff;
-    border-right: 2.5rem solid transparent;
-    border-left: 2.5rem solid transparent;
-    }
-
-
 .container4 {
     display: flex;
     justify-content: center;
@@ -259,6 +254,8 @@ span.header-contact {
 .p1-2 {
     text-align: center;
     font-size: 0.7rem;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
 }
 
 .p2 {
@@ -303,23 +300,15 @@ span.header-contact {
 }
 
 .boxJ::after {
-    content: ' ';
-    position: absolute;
-    margin-left: 45%;
-    margin-top: 0%;
-    width: 0;
-    height: 0;
-    border: none;
     border-top: 1.4rem solid #5396db;
-    border-right: 2.5rem solid transparent;
-    border-left: 2.5rem solid transparent;
-    }
+}
 
 
 .h1-3 {
     color: #ffffff;
     text-align: center;
     padding-top: 5%;
+    margin: 0;
 }
 
 .p3-1 {
@@ -364,20 +353,6 @@ span.header-contact {
 .boxM {
     background-color: #ffffff;
 }
-
-.boxM::after {
-    content: ' ';
-    position: absolute;
-    margin-left: 45%;
-    margin-top: 0.5%;
-    width: 0;
-    height: 0;
-    border: none;
-    border-top: 1.4rem solid #ffffff;
-    border-right: 2.5rem solid transparent;
-    border-left: 2.5rem solid transparent;
-    }
-
  
 .table1 {
     width: 70%;
@@ -408,17 +383,8 @@ th {
 }
 
 .boxO::after {
-    content: ' ';
-    position: absolute;
-    margin-left: 45%;
-    margin-top: 0%;
-    width: 0;
-    height: 0;
-    border: none;
     border-top: 1.4rem solid #7bcdce;
-    border-right: 2.5rem solid transparent;
-    border-left: 2.5rem solid transparent;
-    }
+}
 
 
 .container6 {
@@ -522,20 +488,6 @@ th {
     background: #ffffff;
 }
 
-.boxQ::after {
-    content: ' ';
-    position: absolute;
-    margin-left: 45%;
-    margin-top: 0%;
-    width: 0;
-    height: 0;
-    border: none;
-    border-top: 1.4rem solid #ffffff;
-    border-right: 2.5rem solid transparent;
-    border-left: 2.5rem solid transparent;
-    }
-
-
 .irai-number {
     -webkit-text-fill-color: black;
     font-size: 0.8rem;
@@ -602,17 +554,8 @@ th {
 }
 
 .boxS::after {
-    content: ' ';
-    position: absolute;
-    margin-left: 45%;
-    margin-top: -0.5%;
-    width: 0;
-    height: 0;
-    border: none;
     border-top: 1.4rem solid #5396db;
-    border-right: 2.5rem solid transparent;
-    border-left: 2.5rem solid transparent;
-    }
+}
 
 
 .container8 {
@@ -645,17 +588,8 @@ th {
 }
 
 .boxT::after {
-    content: ' ';
-    position: absolute;
-    margin-left: 45%;
-    margin-top: -1.5%;
-    width: 0;
-    height: 0;
-    border: none;
     border-top: 1.4rem solid #7bcdce;
-    border-right: 2.5rem solid transparent;
-    border-left: 2.5rem solid transparent;
-    }
+}
 
 
 .container9 {
@@ -687,6 +621,10 @@ th {
     margin-left: 2%;
     font-size: 0.9rem;
     font-weight: bold;
+}
+
+.boxU::after {
+    display: none;
 }
 
 .boxU1 {
