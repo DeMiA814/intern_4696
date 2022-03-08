@@ -5,7 +5,78 @@ header{
     display: flex;
     font-size: 1rem;
     padding: 0 0;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 12;
 }
+
+.popup {
+  position: fixed;
+  color: #333;
+  padding: 30px;
+  top: 40px;
+  right: 30px;
+  border: red solid 2px;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.popup.is-show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  width: 30px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn i {
+  font-size: 20px;
+  color: #333;
+}
+
+
+.hamburger-menu{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.9);
+    color: #fff;
+    padding-top: 200px;
+    z-index: 11;
+}
+
+
+
+#hamburger-menu-icon{
+    color: #fff;
+    position: fixed;
+    top: 5px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 13;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 main{
     margin-top: 0%;
@@ -13,11 +84,12 @@ main{
 }
 .header1{
    margin-left: 20px;
+   margin-right: 0px;
 }
 
 .header2{
     margin-right: 50px;
-    margin-left: 30%;
+    margin-left: 20%;
 }
 
 .title{
@@ -172,9 +244,18 @@ main{
         width: 100%;   
         margin-bottom: 30px;
     }
-    
-    
 }
+    .sa {
+        opacity: 0;
+        transition: all .5s ease;
+        transform: translate(0, 100px);
+      }
+    .sa.show {
+        opacity: 1;
+        transform: none;
+      }
+    
+    
 .service-feature{
     padding-top: 40px;
     padding-bottom: 60px;
@@ -834,47 +915,35 @@ main{
     text-align: center;
     margin-bottom: 30px;
 }
-.question-example-wrap{
-    display: block;
-    margin: 10px 30%;
-    list-style: none;
-    width: 600px;
-}
-@media screen and (max-width:1130px) {
-    .question-example-wrap{
-        display: block;
-        margin: 10px 5%;
-        list-style: none;
-        width: auto;
-    }
-}
-.question-example{
-    background-color: white;
-    color: #3b72d6;
-    margin: 10px ;
-    padding-left: 20px;
-    position: relative;
-}
-.question-example span{
+.swiper--wrapper {
+    /* wrapperのサイズを調整 */
+    width: 100%;
+    height: 300px;
+  }
+  
+  .swiper-slide {
+    /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
+    color: #2e5bb2;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 300px;
+    text-align: center;
+    background-color: #eee;
+  }
+  
+  
+
+
+/* .swiper-slide span{
     color: black;
     margin-right: 10px;
+} */
+
+.swiper-button-next,
+.swiper-button-prev {
+    --swiper-navigation-color: black;
 }
-
-.question-example::after{
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: -15px;
-    left: 450px;
-    width: 0px;
-    height: 0px;
-    margin: auto;
-    border-style: solid;
-    border-color: #3b72d6 transparent transparent transparent ;
-    border-width:10px 6px 20px 6px;
-}
-
-
 
 .consult{
     background-color: #7bcdce;
