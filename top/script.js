@@ -30,6 +30,17 @@ hamburgermenu.addEventListener('click', ()=> {
 changeElement(hamburger);
 }, false);
 
+let changehamburger = document.getElementById("hamburger-menu-icon")
+
+ changehamburger.addEventListener('click', function(){
+  if(changehamburger.classList.contains("fa-bars")){
+    changehamburger.classList.remove("fa-bars");
+    changehamburger.classList.add("fa-times");
+  }else{
+    changehamburger.classList.remove("fa-times");
+    changehamburger.classList.add("fa-bars");
+  }
+ })
 
 let formbotton = document.getElementById('form-button')
 
