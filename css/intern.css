@@ -8,23 +8,120 @@ html{
     font-size: 12px;
   }
 
-header {
+/* header {
     background: #1865ad;
-  }
+    position: fixed;
+    width: 100%;
+    z-index: 6;
+  } */
 
 .header_container {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px 0;
+  background: #1865ad;
+  position: fixed;
+  width: 100%;
+  z-index: 6;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+/* menuの処理 */
+#burger {
+  z-index: 10;
+  position: fixed;
+  right: 12px;
+  top: 3.5px;
+}
+
+.burger-hide {
+  opacity: 0;
+}
+
+#burger-cancel {
+  /* ここをburger以上にすると、.burger-hideが効いたときにクリックが反応しなくなる。 */
+  z-index: 7;
+  position: fixed;
+  right: 16px;
+  top: 3.5px;
+}
+
+.cancel-appear {
+  display: none;
+}
+
+.burger-menu, .cancel-menu {
+  font-size: 30px;
+  color: #fff;
+}
+
+#burger-menu {
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.5s 0s ease;
+}
+
+.menu-text {
+  position: relative;
+  width: 32em;
+  margin-right: auto;
+  margin-left: auto;
+  top: 20%;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 44px;
+  color: #fff;
+}
+
+.menu-list {
+  margin-left: 2em;
+}
+
+/* popの処理 */
+#pop {
+  position: absolute;
+  position: fixed;
+  z-index: 6;
+  top: 50px;
+  right: 40px;
+  border: solid 3px red;
+  width: 250px;
+  background-color: bisque;
+}
+
+#pop-cancel {
+  position: absolute;
+  top: 17px;
+  right: 13px;
+}
+
+#pop-explain{
+  font-size: 16px;
+  margin: 5px 30px 5px 5px;
+}
+
+.pop-hide {
+  display: none;
 }
   
 .header-title, .header-contact {
-    font-size: 1rem;
-    font-weight: bold;
-    line-height: 1.5;
-    color: #fff;
+font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* ふわっとでてくる実装 */
+.showup {
+  transition: all 0.5s 0s ease;
+}
+
+.show {
+  opacity: 0;
 }
 
 .top {
@@ -968,20 +1065,28 @@ td {
   margin-bottom: -40px;
 }
 
-.service-question_container_list-items {
+.swiper-container {
+  width: 80%; 
+  height: 150px;
+  margin: 50px auto 20px; 
+}
+
+/* 課題1での縦に並べるcss */
+/* .service-question_container_list-items {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 40px auto 0;
-  width: 55%;
-}
+} */
 
-.service-question_container_list-item {
-  padding: 10px 20px 10px;
+.swiper-slide {
+  text-align: center;
   background-color: #fff;
   margin: 5px 0 5px;
-  display: block;
-  position: relative;
+  padding-top: 50px;
+}
+
+.swiper-slide:nth-child(9) {
+  padding-top: 37px;
 }
 
 .question-text {
@@ -993,7 +1098,8 @@ td {
   color: #4b96d3;
 }  
 
-.service-question_container_list-item::after{
+/* 下三角の矢印 */
+/* .service-question_container_list-item::after{
   content: "";
   position: absolute;
   right: 15px;
@@ -1001,7 +1107,7 @@ td {
   border-style: solid;
   border-width: 8px 5px 0 5px;
   border-color: #4b96d3 transparent transparent transparent;
-} 
+}  */
 
 .question-arrow {
   width: 0px;
